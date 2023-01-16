@@ -1,10 +1,12 @@
 <div class="content-container">
     <div class="content-area">
-        content area side
         <router-outlet></router-outlet>
     </div>
     
     <clr-vertical-nav>
-        <a routerLink="images">images</a>
+        <a clrVerticalNavLink routerLink="analysis" routerLinkActive="active">Analysis</a>
+        <a clrVerticalNavLink routerLink="images" routerLinkActive="active">Images</a>
+        <a clrVerticalNavLink routerLink="videos" routerLinkActive="active">Videos</a>
+        <a clrVerticalNavLink routerLink="broadcast" routerLinkActive="active">Broadcast</a>
     </clr-vertical-nav>
 </div>

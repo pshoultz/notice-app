@@ -5,14 +5,21 @@ import { ClarityModule } from "@clr/angular";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
 import { CmsComponent } from './cms/cms.component';
 import { CmsImagesComponent } from './cms-images/cms-images.component';
+import { CmsAnalysisComponent } from './cms-analysis/cms-analysis.component';
+import { CmsVideosComponent } from './cms-videos/cms-videos.component';
+import { CmsBroadcastComponent } from './cms-broadcast/cms-broadcast.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CmsComponent,
-    CmsImagesComponent
+    CmsImagesComponent,
+    CmsAnalysisComponent,
+    CmsVideosComponent,
+    CmsBroadcastComponent
   ],
   imports: [
     BrowserModule,
