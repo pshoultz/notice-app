@@ -1,1 +1,45 @@
-<p>cms-images works!</p>
+<p>
+    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+</p>
+
+<div class="btn-group btn-primary">
+    <button class="btn" (click)="addImage()">Add</button>
+</div>
+
+<div class="clr-row">
+    <div class="clr-col-lg-5 clr-col-md-8 clr-col-12">
+        <div class="card">
+            <h3 class="card-header">Header</h3>
+            <div class="card-block">
+                <!--<h4 class="card-title">picture image here</h4>-->
+                <div class="card-img">
+                    <img src="https://static.jdmexport.com/wp-content/uploads/sites/9/2022/12/08095258/toyota-ae86.jpg">
+                </div>
+
+                <form clrForm>
+                    <clr-input-container>
+                      <label>text area 1</label>
+                      <input clrInput placeholder="text area 1 data" name="name" />
+                    </clr-input-container>
+
+                    <clr-input-container>
+                      <label>text area 2</label>
+                      <input clrInput placeholder="text area 2 data" name="name" />
+                    </clr-input-container>
+
+                    <clr-input-container>
+                      <label>text area 3</label>
+                      <input clrInput placeholder="text area 3 data" name="name" />
+                    </clr-input-container>
+                </form>
+
+            </div>
+
+            <div class="card-footer">
+                <button class="btn btn-sm btn-success">save</button>
+                <button class="btn btn-sm btn-primary">edit</button>
+                <button class="btn btn-sm btn-danger">delete</button>
+            </div>
+        </div>
+    </div>
+</div>

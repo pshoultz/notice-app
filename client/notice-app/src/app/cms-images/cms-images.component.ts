@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class CmsImagesComponent {
 
+  addImage() {
+    debugger
+  }
+
+  //NOTE: upload image to amazon s3 buckets
+  uploadImage() {
+  }
 }
