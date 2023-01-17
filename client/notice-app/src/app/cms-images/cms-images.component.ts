@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class CmsImagesComponent {
 
+  name: string = "lkjljasdf";
+
   addImage() {
     debugger
   }
