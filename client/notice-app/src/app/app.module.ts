@@ -11,6 +11,7 @@ import { CmsImagesComponent } from './cms-images/cms-images.component';
 import { CmsAnalysisComponent } from './cms-analysis/cms-analysis.component';
 import { CmsVideosComponent } from './cms-videos/cms-videos.component';
 import { CmsBroadcastComponent } from './cms-broadcast/cms-broadcast.component';
+import { CmsAnalyticsComponent } from './cms-analytics/cms-analytics.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CmsBroadcastComponent } from './cms-broadcast/cms-broadcast.component';
     CmsImagesComponent,
     CmsAnalysisComponent,
     CmsVideosComponent,
-    CmsBroadcastComponent
+    CmsBroadcastComponent,
+    CmsAnalyticsComponent
   ],
   imports: [
     BrowserModule,
