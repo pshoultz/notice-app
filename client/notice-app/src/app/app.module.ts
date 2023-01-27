@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { HttpClientModule } from '@angular/common/http';
 import { ClarityModule } from "@clr/angular";
 
 import { AppRoutingModule } from './app-routing.module';
@@ -26,7 +27,8 @@ import { CmsAnalyticsComponent } from './cms-analytics/cms-analytics.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ClarityModule
+    ClarityModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
