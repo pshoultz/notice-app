@@ -8,8 +8,12 @@ app.use(cors({
 }));
 
 app.get('/', (req, res) => {
-    res.send({"message": "beep"})
+    res.send({"message": "beep"}).status(200);
 })
+
+app.post('/qr', (req, res) => {
+
+});
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
