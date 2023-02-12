@@ -19,7 +19,7 @@ export class CmsBroadcastComponent {
   ngAfterViewInit() {
     this.ctx = this.canvas.nativeElement.getContext('2d');
     this.image = new Image();
-    this.image.src = 'assets/htE0KtNl.jpeg';
+    this.image.src = this.ads[0];
     this.image.onload = () => this.animate();
   }
 
@@ -27,6 +27,15 @@ export class CmsBroadcastComponent {
     this.ctx.clearRect(0, 0, this.canvas.nativeElement.width, this.canvas.nativeElement.height);
     this.ctx.drawImage(this.image, 0, this.y, this.canvas.nativeElement.width, this.canvas.nativeElement.height);
     this.y -= this.direction * this.speed;
+
+    console.log(Math.abs(this.y), this.canvas.nativeElement.height)
+
+    if(Math.abs(this.y + 10) == this.canvas.nativeElement.height) {
+      //this.image.src = this.ads[1];
+      //this.y = 0;
+      //this.direction = 1;
+      //this.speed = 1;
+    }
 
     requestAnimationFrame(() => this.animate());
   }
